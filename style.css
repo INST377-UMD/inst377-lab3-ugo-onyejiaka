@@ -1,0 +1,85 @@
+/* simple page font (custom from default) */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+  }
+  
+  /* header + footer share the same class */
+  .bar {
+    background: #2255a4;
+    color: #fff;
+    text-align: center;     /* center text */
+    padding: 16px;          /* padding required */
+    margin: 12px;           /* margin required */
+  }
+  
+  /* basic nav */
+  .top-nav ul {
+    list-style: none;       /* no bullets */
+    margin: 0;
+    padding: 8px;
+    display: flex;          /* horizontal */
+    gap: 14px;
+    justify-content: center;
+    background: #eee;
+  }
+  
+  .top-nav a {
+    text-decoration: none;
+    padding: 6px 10px;
+    color: #222;
+  }
+  
+  .top-nav a:hover {        /* hover state */
+    text-decoration: underline;
+  }
+  
+  /* layout */
+  .wrap {
+    display: flex;          /* same line */
+    gap: 12px;
+    margin: 12px;
+  }
+  
+  .main {
+    width: 70%;             /* percentage width */
+    padding: 12px;          /* padding required */
+    border: 1px solid #ddd;
+  }
+  
+  .side {
+    width: 30%;             /* percentage width */
+    padding: 12px;          /* padding required */
+    border: 1px solid #ddd;
+    background: #f7f7f7;    /* different color from rest */
+  }
+  
+  .side:hover {             /* sidebar hover color change */
+    background: #e9eefc;
+  }
+  
+  /* simple form */
+  form {
+    display: grid;
+    gap: 10px;
+    max-width: 340px;
+  }
+  
+  #name {
+    width: 180px;
+    padding: 6px;
+    border: 1px solid #aaa;
+  }
+  
+  /* grows on focus, shrinks when unfocused automatically */
+  #name:focus {
+    width: 260px;
+    outline: none;
+    transition: width 0.25s;
+  }
+  
+  button {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
